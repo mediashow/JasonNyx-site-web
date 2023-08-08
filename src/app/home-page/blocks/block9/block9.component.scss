@@ -1,0 +1,40 @@
+:host{
+    display: flex;
+    align-items: center;
+    background: #F9F9F9;
+    min-height: 100vh;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+    h1{
+        text-align: center;
+        font-family: 'Axiforma';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2.25rem;
+        line-height: 3.75rem;
+    }
+    p{
+        font-family: 'Axiforma';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.8125rem;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    :host{
+        .myflex{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            bottom: 4rem;
+        }
+
+        .morepaddingleft{
+            padding-left: 3rem;
+        }
+    }
+}

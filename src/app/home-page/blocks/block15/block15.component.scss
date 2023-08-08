@@ -1,0 +1,207 @@
+:host {
+  h1 {
+    color: #6e6d7a;
+    font-family: Axiforma;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .idee {
+    height: 50px;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: #6e6d7a !important;
+  }
+
+  display: block;
+  background: #FFFFFF;
+  height: 100%;
+  padding-top: 3rem;
+
+  .myflex {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 2%;
+  }
+
+  .contact {
+    width: 35%;
+  }
+
+  .button {
+    color: white;
+  }
+
+  p,
+  span {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4b4a57;
+    opacity: 0.5;
+  }
+
+  .black {
+    color: black;
+    opacity: 1;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #4b4a57;
+    font-family: 'SF Pro Display';
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #4b4a57;
+    font-family: 'SF Pro Display';
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  #idea::placeholder {
+    position: relative;
+    top: -45%;
+  }
+
+  #idea {
+    height: 10rem;
+  }
+
+  .space {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    background: #28C0D7;
+    border-radius: 8px;
+    color: white;
+    width: 15rem;
+    border-color: #28C0D7;
+    height: 3rem;
+  }
+
+  #copyright {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hover-effect4 {
+    min-height: 200px;
+    background: white;
+    text-align: center;
+    border: 5px white
+  }
+
+  .hover-effect4 ul {
+    padding-top: 50px;
+  }
+
+  .hover-effect4 ul li {
+    display: inline-block;
+  }
+
+  .hover-effect4 ul li a {
+    font-size: 35px;
+    color: #6e6d7a;
+    margin: 0px 10px;
+    line-height: 70px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 73px;
+    height: 73px;
+    background: #f3f3f4;
+    transition: all 0.3s ease;
+  }
+
+  .hover-effect4 ul li:hover a {
+    background: #f3f3f4;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+//MOBILE
+@media screen and (max-width: 767px) {
+  :host {
+    .myflex {
+      display: flex;
+      justify-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: center;
+      /* width: 100%; */
+      align-items: center;
+    }
+
+    .bureaux {
+      width: 70%;
+    }
+
+    .propos {
+      width: 70%;
+      margin-top: 42px;
+    }
+
+    .contact {
+      margin-top: 40px;
+      width: 70%;
+    }
+  }
+}
+
+//TABLETTE
+@media screen and (max-width: 1023px) {
+  :host {
+    .block {
+      display: flex;
+    }
+
+    .space {
+      width: 100%;
+      margin: unset;
+      padding-left: 178px;
+      margin-bottom: unset;
+    }
+  }
+}
+
+//PC SHORT
+@media screen and (min-width: 1024px) {}
+
+//PC LARGE
+@media screen and (min-width: 1440px) {
+  :host{
+    width: 70%;
+    margin: auto;
+  }
+}

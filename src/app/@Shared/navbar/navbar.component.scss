@@ -1,0 +1,86 @@
+:host{
+    width: 100%;
+    margin-top: 5%;
+    .navbarAlign{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top:0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(258.4deg, rgba(0, 0, 0, 0.8) 100%, rgba(6, 6, 14, 0.608) 45.92%, rgba(6, 6, 14, 0) 91.48%);
+    }
+    .burgerButton{
+        align-self: baseline;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .flex-menu{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 7%;
+        top: 23%;
+    }
+    .item-menu{
+        font-family: 'Axiforma';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3.1875rem;
+        color: #FFFFFF;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+    .item-menu:nth-child(1){animation-delay: 0.1s;}
+    .item-menu:nth-child(2){animation-delay: 0.2s;}
+    .item-menu:nth-child(3){animation-delay: 0.3s;}
+    .item-menu:nth-child(4){animation-delay: 0.4s;}
+    .item-menu:last-child{
+        margin-bottom: 0;
+        animation-delay: 0.5s
+    }
+    .item-menu:hover{
+        color: #28C0D7;
+    }
+    .animate {
+        animation-name: arriver;
+        animation-duration: 1.5s;
+        animation-fill-mode: both; 
+        animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    }
+
+    .reverse{
+        animation-duration: 0.4s;
+        animation-direction: reverse;
+        animation-name: arriver;
+        animation-fill-mode: both; 
+        animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    }
+     
+    @keyframes arriver {
+        from{
+            transform: translateX(140%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+    .goto{
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    :host{
+        .menu{
+            background: linear-gradient(258.4deg, rgba(0, 0, 0, 0.8) 15%, rgba(6, 6, 14, 0.608) 45.92%, rgba(6, 6, 14, 0) 91.48%);
+        }
+    }
+}

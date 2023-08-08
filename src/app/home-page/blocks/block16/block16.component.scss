@@ -1,0 +1,110 @@
+:host {
+  .beforeanim {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+* {
+  background-color: #f9f9f9;
+}
+
+//MOBILE
+@media screen and (max-width: 767px) {
+  :host {
+    .titre {
+      font-family: "Axiforma";
+      padding-top: 56px;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+
+    p {
+      font-size: 1em;
+      padding-top: 25px;
+      padding-bottom: 24px;
+      text-align: justify;
+    }
+
+    .text {
+      width: 95%;
+      font-family: 'Axiforma';
+    }
+
+    .mobile {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    .pc {
+      display: none;
+    }
+  }
+}
+
+//TABLETTE
+@media screen and (max-width: 1023px) {
+  .text {
+    width: 90%;
+    font-family: 'Axiforma';
+  }
+
+  .titre {
+    font-family: 'Axiforma';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+  }
+
+  .bloc {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .mobile {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+
+  .pc {
+    display: none;
+  }
+}
+
+//PC SHORT
+@media screen and (min-width: 1024px) {
+
+  .mobile{
+    display: none;
+  }
+
+  .text {
+    width: 45%;
+    font-family: 'Axiforma';
+  }
+
+  .titre {
+    font-weight: bold;
+    padding-bottom: 27px;
+    font-size: 3em;
+  }
+
+  .bloc {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

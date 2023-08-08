@@ -1,0 +1,154 @@
+:host {
+  display: flex;
+  align-items: center;
+  min-height: 40vh;
+  height: 100%;
+  overflow: hidden;
+
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    align-content: stretch;
+  }
+
+  app-mini-card {
+    margin-bottom: 5rem;
+  }
+
+
+
+  .logo {
+    height: 170px;
+    z-index: 9;
+    margin-bottom: -85px;
+    margin-left: 89px;
+  }
+
+  .valeursIcon {
+    margin: auto;
+    width: 14.125rem;
+    margin-top: -6rem;
+  }
+
+  .marginside {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .marginstart {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .titre {
+    padding-bottom: 110px;
+  }
+
+  h1 {
+    font-family: 'Axiforma';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .anim {
+    //color:green;
+    animation-name: test;
+    animation-duration: 1s;
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+  }
+
+  .beforeanim {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  @keyframes test {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+
+    1% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+}
+
+//MOBILE
+@media screen and (max-width: 767px) {
+  :host {
+    .block {
+      // position: relative;
+      padding-bottom: 125px;
+      margin-top: 30px;
+    }
+
+    .marginstart {
+      margin-bottom: -5rem !important;
+      margin-top: 2rem !important;
+    }
+  }
+}
+
+//TABLETTE
+@media screen and (max-width: 1023px) {
+  :host {
+    .beforeanim {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+
+    .block {
+      // position: relative;
+      width: 100%;
+      margin-bottom: 10%;
+    }
+
+    .spacing-pc {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .marginstart {
+      margin-top: 4rem !important;
+    }
+  }
+}
+
+//PC SHORT
+@media screen and (min-width: 1024px) {
+  :host {
+    .beforeanim {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+
+    .spacing-pc {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .block {
+      width: 30%;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :host{
+    width: 70%;
+    margin: auto;
+  }
+}

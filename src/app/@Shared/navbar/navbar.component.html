@@ -1,0 +1,17 @@
+<div class="navbarAlign">
+  <img src="../../../assets/logo.png">
+  <img (click)="DisplayMenu()" class="burgerButton" [src]="displayMenu ? '../../../../assets/croix.svg':'../../../../assets/button.png'">
+</div>
+
+<div @myInsertRemoveTrigger *ngIf="displayMenu" class="menu">
+  <div class="flex-menu">
+    <div (click)="scrollTo('concept')" class="item-menu animate">Le concept</div>
+    <div (click)="scrollTo('editeur')" class="item-menu animate">Editeurs</div>
+    <div (click)="scrollTo('podcast')" class="item-menu animate">Podcast et Replay</div>
+    <div (click)="scrollTo('video')" class="item-menu animate">Jeux vidéo</div>
+    <div (click)="scrollTo('live')" class="item-menu animate">Les influenceurs</div>
+    <div (click)="scrollTo('pass')" class="item-menu animate">Le media Pass</div>
+    <div (click)="scrollTo('kiosque')" class="item-menu animate">Le kiosque</div>
+    <div (click)="scrollTo('contact')" class="item-menu animate">Contact</div>
+  </div>
+</div>

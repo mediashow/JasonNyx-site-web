@@ -1,0 +1,40 @@
+:host{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 20rem;
+    background: rgba(40, 192, 215, 0.12);
+    //margin:[top] [right] [bottom] [left]
+    margin: 1rem auto 1rem auto;
+
+    .barVertical{
+        background: #00889C;
+        width: 1%;
+        height: 20rem;
+    }
+
+    .textClass{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p{
+        font-family: 'Axiforma';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+}
+
+:host:hover{
+    background: #00889C;
+    p{
+        color: #FFFFFF;
+    }
+}

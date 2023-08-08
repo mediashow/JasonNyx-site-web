@@ -1,0 +1,11 @@
+:host{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+@media screen and (min-width: 575px) {
+    :host{
+        height: 100vh;
+        scroll-snap-align:unset;
+    }
+}

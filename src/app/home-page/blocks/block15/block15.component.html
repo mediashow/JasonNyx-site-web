@@ -1,0 +1,77 @@
+<div class="myflex">
+    <div class="bureaux">
+        <div class="">
+            <div class="">
+                <h1>BUREAUX</h1>
+            </div>
+            <div class="col-12">
+                <p>
+                    Mediashow Innova Pôle<br>
+                    198 Avenue de France<br>
+                    75013 Paris
+                </p>
+            </div>
+            <div class="col-12">
+                <span><span class="black">Tel:</span> 09 54 33 25 32</span><br>
+                <span><span class="black">E-mail:</span> hello [at] mediashow.fr</span>
+<!--          <div class="hover-effect4">-->
+<!--            <ul>-->
+<!--              <li><a href="#." title="Facebook"><i class="fa fa-facebook"></i></a></li>-->
+<!--              <li><a href="#." title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+<!--              <li><a href="#." title="Google Plus"><i class="fa fa-instagram"></i></a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+            </div>
+        </div>
+    </div>
+  <script src="https://use.fontawesome.com/cece742d74.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="propos ">
+        <div class="">
+            <div class="">
+                <h1>A PROPOS</h1><br>
+            </div>
+            <div class="col-12">
+                <span><a href="https://preprod-front.mediashow.fr/?page=Informations%20legales" target="_blank">Mentions légales</a></span><br>
+                <span><a href="https://preprod-front.mediashow.fr/?page=Informations%20legales" target="_blank">Données & Cookies</a></span><br>
+                <span><a href="https://preprod-front.mediashow.fr/?page=Informations%20legales" target="_blank">C.G.U</a></span><br>
+            </div>
+        </div>
+    </div>
+
+    <div class=" contact">
+        <div class="">
+          <form action="https://formsubmit.co/hello@mediashow.fr" method="POST">
+            <div class="col-12">
+                <h1 id="contact">Nous contacter<br>Demander une démo</h1><br>
+            </div>
+            <div class="col-12">
+                <p>
+                  Adressez-nous des messages, suggestions et demandes, c'est toujours inspirant et le plus simple pour débuter des échanges. Vous pouvez aussi utiliser l’email hello [at] mediashow.fr
+                </p>
+            </div>
+            <div class="col-12">
+                <input type="text" placeholder="Nom">
+            </div>
+            <div class="col-12">
+              <input type="email" name="email" placeholder="E-mail" [(ngModel)]="from">
+            </div>
+            <div class="col-12 idee">
+              <textarea name="body" placeholder="Envoyez nous vos suggestions. Cela nous fait toujours plaisir" class="textarea" [(ngModel)]="message"></textarea>
+            </div>
+            <br><br>
+            <div class="col-12 button">
+              <input style="width:60%; margin: auto; display: flex; justify-content: center; margin-bottom: 15px;"  type="button" value="Envoyer" (click)="sendMail()"/>
+            </div>
+            <div *ngIf="submited == true" class="col-12 alert-success" style="text-align: center">Message envoyé !</div>
+            <div *ngIf="mailError == true" class="col-12 alert-danger" style="text-align: center">Une erreur a eu lieu</div>
+          </form>
+        </div>
+    </div>
+</div>
+
+    <div class="col-12" id="copyright">
+        <span>©Copyright 2023 - MEDIASHOW. All rights reserved.</span>
+    </div>
+

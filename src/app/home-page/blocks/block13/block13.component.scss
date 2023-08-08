@@ -1,0 +1,245 @@
+.logo {
+  position: absolute;
+  width: 10%;
+  height: 6%;
+  left: 10%;
+  top: 18px;
+  display: block;
+}
+.paragraphe {
+  width: 80%;
+  height: 20%;
+
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  /* Blue */
+
+  color: #040B4F;
+
+  opacity: 0.8;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  display: block;
+}
+.container {
+  /* Add a container div to wrap all the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+.titre {
+  margin-right: 1rem;
+
+  /* Blue */
+
+  color: #040B4F;
+}
+
+:host {
+  .beforeanim {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+}
+
+.button {
+  position: absolute;
+  width: 15%;
+  height: 6%;
+
+  background-color: #040B4F;
+  color:white;
+  border-radius: 13px;
+  border-color: #040B4F;
+}
+
+.buttonText {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 650px) {
+  .mobile {
+    display: none;
+  }
+
+  .pc {
+    display: block;
+  }
+}
+
+//MOBILE
+@media screen and (max-width: 767px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mobile {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .titre {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 17px;
+    text-align: justify;
+  }
+  .button{
+    width: 73%;
+  }
+
+  .logo {
+    width: 40%;
+  }
+}
+
+//TABLETTE
+@media screen and (max-width: 1023px) {
+  img {
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 85%;
+  }
+
+  .mobile {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .text {
+    width: 50%;
+    font-family: 'Axiforma';
+  }
+
+  .titre {
+    font-weight: bold;
+    padding-bottom: 27px;
+  }
+
+  .paragraphe {
+    width: 80%;
+    height: 20%;
+
+    font-family: 'Axiforma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    /* Blue */
+
+    color: #040B4F;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    display: block;
+    top: 40%;
+  }
+
+  .bloc {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 70px;
+    width: 174%;
+  }
+}
+
+//PC SHORT
+@media screen and (min-width: 1024px) {
+  .text {
+    width: 45%;
+    font-family: 'Axiforma';
+  }
+
+  img{
+    width: 50%;
+  }
+  .titre {
+    width: 684px;
+    height: 152px;
+
+    font-family: 'Axiforma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 76px;
+    display: flex;
+    align-items: center;
+
+    /* Blue */
+
+    color: #040B4F;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: block;
+  }
+
+  .bloc {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 25%;
+    padding-bottom: 70px;
+  }
+}
+
+//PC LARGE
+@media screen and (min-width: 1440px) {
+  .bloc {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 70px;
+    width: 140%;
+  }
+}

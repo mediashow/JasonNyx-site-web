@@ -1,0 +1,69 @@
+:host{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 18px 2px rgba(39, 38, 67, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23rem;
+
+  p{
+    max-height: 10.9375rem;
+    overflow: hidden;
+  }
+
+  .text{
+    font-family: 'Axiforma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    text-align: center;
+  }
+
+  .title{
+    font-family: 'Axiforma';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .mainContent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 2rem;
+  }
+
+  img{
+    margin: auto;
+    width: 10rem;
+    margin-top: -8rem;
+    padding-bottom: 57px;
+  }
+}
+
+:host:hover{
+  background-color: #DB2836;
+  img{
+    filter: brightness(0) invert(1);
+  }
+  .text{
+    color: #FFFFFF;
+  }
+  .title{
+    color: #FFFFFF;
+  }
+}
+
+.anim{
+  color: #DB2836 !important;
+}
+
+@media screen and (max-width: 395px) {
+  :host{
+    // width: 90%;
+  }
+}
